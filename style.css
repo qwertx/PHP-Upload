@@ -4,10 +4,19 @@
 body {
 	background-color: #34495e;
 	margin: 0 0 0 0;
+	height: 95%;
 }
-img video {
-	max-height: 90%;
-	max-width: 90%;
+footer {
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 5%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+img, video {
+	max-width: 80%;
+	max-height: 80%;
+	float: center;
 }
 .header {
 	padding-bottom: 10%;
@@ -19,15 +28,15 @@ img video {
 	font-family: 'Comfortaa', cursive;
 	text-shadow: 0px 0px 16px #2c3e50;
 }
-.sidenote {
-	text-align: center;
-	color: light-grey;
-}
 .block {
 	width: 50%;
-	height: 50%;
+	height: 40%;
 	text-align: center;
 	background-color: white;
+	border-style: solid;
+	border-width: 3 0 3 0;
+	border-color: #2c3e50;
+	background: white;
 }
 .left {
 	
@@ -42,7 +51,6 @@ img video {
 }
 .text {
 	font-size: 18;
-	margin-top: 30px;
 	padding: 4px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -70,9 +78,7 @@ img video {
 	background-color: #34495e;
 }
 .button {
-	margin-top: 30%;
-	width: 100px;
-	height: 50px;
+	padding: 3 6 3 6;
 	border: none;
 	-webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
 	-moz-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
@@ -84,10 +90,19 @@ img video {
 }
 .button:hover {
 	animation: white_to_blue 0.5s;
+	-webkit-animation: white_to_blue 0.5s;
 	color: white;
 	background-color: #34495e;
 }
-
+.no-link {
+	color: black;
+	text-decoration: none;
+}
+.no-link:hover {
+	color: white;
+	animation: nolink_fade 1s;
+	-webkit-animation: nolink_fade 1s;
+}
 @keyframes white_to_blue {
 	from {background-color: white;}
 	to {background-color: #34495e;}
@@ -95,4 +110,12 @@ img video {
 @-webkit-keyframes white_to_blue {
 	from {background-color: white;}
 	to {background-color: #34495e;}
+}
+@keyframes nolink_fade {
+	from {color: black;}
+	to {color: white;}
+}
+@-webkit-keyframes nolink_fade {
+	from {color: black;}
+	to {color: white;}
 }
