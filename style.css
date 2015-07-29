@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	background-color: #34495e;
+	margin: 0 0 0 0;
+}
+img video {
+	max-height: 90%;
+	max-width: 90%;
+}
+.header {
+	padding-bottom: 10%;
+}
+.title {
+	text-align: center;
+	margin-top: 2%;
+	font-size: 64;
+	font-family: 'Comfortaa', cursive;
+	text-shadow: 0px 0px 16px #2c3e50;
+}
+.sidenote {
+	text-align: center;
+	color: light-grey;
+}
+.block {
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	background-color: white;
+}
+.left {
+	
+	float: left;
+}
+.right {
+
+	float: right;
+}
+.full-width {
+	width: 100%;
+}
+.text {
+	font-size: 18;
+	margin-top: 30px;
+	padding: 4px;
+	font-family: 'Roboto', sans-serif;
+}
+#form {
+	margin-top: 6%;
+}
+#filepicker {
+	width: 50%;
+	margin-left: 25%;
+	height: 10%;
+}	
+#submitbutton {
+	margin-top: 10%;
+	width: 100px;
+	height: 50px;
+	border: none;
+	-webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
+	box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
+	background-color: white;
+}
+#submitbutton:hover {
+	animation: white_to_blue 0.5s;
+	color: white;
+	background-color: #34495e;
+}
+.button {
+	margin-top: 30%;
+	width: 100px;
+	height: 50px;
+	border: none;
+	-webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
+	box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	font-size: 24;
+}
+.button:hover {
+	animation: white_to_blue 0.5s;
+	color: white;
+	background-color: #34495e;
+}
+
+@keyframes white_to_blue {
+	from {background-color: white;}
+	to {background-color: #34495e;}
+}
+@-webkit-keyframes white_to_blue {
+	from {background-color: white;}
+	to {background-color: #34495e;}
+}
