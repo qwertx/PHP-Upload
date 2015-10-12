@@ -3,6 +3,7 @@
 		case 'jpg':
 		case 'png':
 		case 'jpeg':
+		case 'gif':
 			echo'<img src="storage/' . $filecount . "." . $extension . '" alt="something is wrong here">';
 			break;
 		case 'mp3':
@@ -27,7 +28,7 @@
 		default:
 			echo '
 				<p class="text">
-					This Filetype is not supported yet, please contact me via Twitter (<a style="text-decoration: none; color: #34495e;" href="www.twitter.com/qwertxzy">@qwertxzy</a>) if you want it to be added <br> <br> <br>
+					The Filetype ' . $extension . ' is not supported yet, please contact me via Twitter (<a style="text-decoration: none; color: #34495e;" href="www.twitter.com/qwertxzy">@qwertxzy</a>) if you want it to be added <br> <br> <br>
 				</p>
 			';
 	}
